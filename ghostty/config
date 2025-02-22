@@ -1,0 +1,31 @@
+theme = nord
+font-family = Cascadia Code
+font-size = 14
+font-thicken = false
+background-opacity = 0.8
+background-blur-radius = 50
+window-vsync = true
+mouse-scroll-multiplier = 0.5
+
+shell-integration-features = no-cursor
+cursor-style = underline
+
+macos-titlebar-style = hidden
+window-save-state = always
+window-colorspace = "display-p3"
+macos-window-shadow = true
+
+mouse-hide-while-typing = true
+link-url = true
+
+window-inherit-working-directory = true
+clipboard-read = allow
+clipboard-write = allow
+
+window-padding-x = 5
+window-padding-y = 0
+window-padding-balance = true
+window-height = 40
+window-width = 150
+
+background-image = "BG5.png"
