@@ -4,28 +4,39 @@ font-size = 14
 font-thicken = false
 background-opacity = 0.8
 background-blur-radius = 50
-window-vsync = true
-mouse-scroll-multiplier = 0.5
 
-shell-integration-features = no-cursor
 cursor-style = underline
+cursor-color = #89bfd0
+shell-integration-features = no-cursor
 
-macos-titlebar-style = hidden
-window-save-state = always
-window-colorspace = "display-p3"
+macos-titlebar-style = 
+gtk-titlebar = true
 macos-window-shadow = true
+window-colorspace = "display-p3"
+macos-icon = custom-style
+macos-icon-frame = chrome
+macos-icon-ghost-color = 000000
+macos-icon-screen-color = ff0000
 
-mouse-hide-while-typing = true
-link-url = true
-
+window-save-state = always
 window-inherit-working-directory = true
-clipboard-read = allow
-clipboard-write = allow
-
+window-height = 40
+window-width = 150
+window-decoration = 
+window-titlebar-background = black
+window-subtitle = working-directory
 window-padding-x = 5
 window-padding-y = 0
 window-padding-balance = true
-window-height = 40
-window-width = 150
+window-vsync = true
 
-background-image = "BG5.png"
+mouse-scroll-multiplier = 0.5
+mouse-hide-while-typing = true
+
+clipboard-read = allow
+clipboard-write = allow
+clipboard-trim-trailing-spaces = true
+
+link-url = true
+
+auto-update = download
