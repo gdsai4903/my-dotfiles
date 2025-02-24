@@ -154,7 +154,15 @@ return {
     local servers = {
       -- clangd = {},
       -- gopls = {},
-      -- pyright = {},
+      pyright = {
+        settings = {
+          python = {
+            venvPath = '/Users/gagandeepsingh/anaconda3/envs',
+            venv = 'moonlite',
+            pythonPath = '/Users/gagandeepsingh/anaconda3/envs/moonlite/bin/python',
+          },
+        },
+      },
       -- rust_analyzer = {},
       -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
       --
@@ -164,22 +172,22 @@ return {
       -- But for many setups, the LSP (`tsserver`) will work just fine
       ts_ls = {}, -- tsserver is deprecated
       ruff = {},
-      pylsp = {
-        settings = {
-          pylsp = {
-            plugins = {
-              pyflakes = { enabled = false },
-              pycodestyle = { enabled = false },
-              autopep8 = { enabled = false },
-              yapf = { enabled = true },
-              mccabe = { enabled = false },
-              pylsp_mypy = { enabled = false },
-              pylsp_black = { enabled = true },
-              pylsp_isort = { enabled = false },
-            },
-          },
-        },
-      },
+      -- pylsp = {
+      --   settings = {
+      --     pylsp = {
+      --       plugins = {
+      --         pyflakes = { enabled = false },
+      --         pycodestyle = { enabled = false },
+      --         autopep8 = { enabled = false },
+      --         yapf = { enabled = true },
+      --         mccabe = { enabled = false },
+      --         pylsp_mypy = { enabled = false },
+      --         pylsp_black = { enabled = true },
+      --         pylsp_isort = { enabled = false },
+      --       },
+      --     },
+      --   },
+      -- },
       html = { filetypes = { 'html', 'twig', 'hbs' } },
       cssls = {},
       tailwindcss = {},
