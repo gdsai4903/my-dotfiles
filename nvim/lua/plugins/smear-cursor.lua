@@ -13,8 +13,10 @@ return {
 
     -- Set to `true` if your font supports legacy computing symbols (block unicode symbols).
     -- Smears will blend better on all backgrounds.
-    legacy_computing_symbols_support = false,
-    stiffness = 0.8,
+    legacy_computing_symbols_support = true,
+
+    cursor_color = '#66d9e8',
+    stiffness = 0.7,
     trailing_stiffness = 0.5,
     trailing_exponent = 2,
     gamma = 1,

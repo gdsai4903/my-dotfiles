@@ -5,6 +5,7 @@ end
 
 require 'core.options' -- Load general options
 require 'core.keymaps' -- Load general keymaps
+require 'core.commands' -- Load general keymaps
 require 'core.snippets' -- Custom code snippets
 
 -- Set up the Lazy plugin manager
@@ -19,7 +20,8 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 -- Load plugins via Lazy
-require('lazy').setup {
+require('lazy').setup({
+  require 'plugins.lsp',
   require 'plugins.mini',
   require 'plugins.neotree',
   require 'plugins.bufferline',
@@ -34,7 +36,6 @@ require('lazy').setup {
   require 'plugins.markdown-preview',
   require 'plugins.treesitter',
   require 'plugins.telescope',
-  require 'plugins.lsp',
   require 'plugins.autocompletion',
   require 'plugins.comment',
   require 'plugins.live-server',
@@ -42,27 +43,24 @@ require('lazy').setup {
   require 'plugins.lazygit',
   require 'plugins.indent-blankline',
   require 'plugins.snacks',
-}
-
--- Automatically detect and use Conda Python for Pyright
-local conda_env = os.getenv 'CONDA_PREFIX'
-if conda_env then
-  local lspconfig = require 'lspconfig'
-  if lspconfig then
-    lspconfig.pyright.setup {
-      settings = {
-        python = {
-          pythonPath = conda_env .. '/bin/python',
-        },
-      },
-    }
-    print('Using Conda environment: ' .. conda_env)
-  else
-    print 'Warning: lspconfig not found!'
-  end
-else
-  print 'No Conda environment detected!'
-end
+}, {
+  ui = {
+    border = 'rounded', -- or "single", "double", etc.
+    icons = {
+      cmd = '⌘',
+      config = '🛠',
+      event = '📅',
+      ft = '📂',
+      init = '⚙',
+      keys = '🗝',
+      plugin = '🔌',
+      runtime = '💻',
+      source = '📄',
+      start = '🚀',
+      task = '📌',
+    },
+  },
+})
 
 -- Modeline for Vim settings
 -- vim: ts=2 sts=2 sw=2 et

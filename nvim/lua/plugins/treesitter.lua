@@ -33,6 +33,9 @@ return { -- Highlight, edit, and navigate code
       'css',
       'html',
     },
+    -- autotag = {
+    --   enable = true,
+    -- },
     -- Autoinstall languages that are not installed
     auto_install = true,
     highlight = {

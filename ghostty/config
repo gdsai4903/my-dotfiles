@@ -2,19 +2,19 @@ theme = nord
 font-family = Cascadia Code
 font-size = 14
 font-thicken = false
-background-opacity = 0.8
+background-opacity = 0.85
 background-blur-radius = 50
 
 cursor-style = underline
 cursor-color = #89bfd0
 shell-integration-features = no-cursor
 
-macos-titlebar-style = 
+macos-titlebar-style =
 gtk-titlebar = true
 macos-window-shadow = true
 window-colorspace = "display-p3"
-macos-icon = custom-style
-macos-icon-frame = chrome
+macos-icon = paper
+macos-icon-frame = plastic
 macos-icon-ghost-color = 000000
 macos-icon-screen-color = ff0000
 

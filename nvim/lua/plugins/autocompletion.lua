@@ -178,5 +178,14 @@ return { -- Autocompletion
         { name = 'buffer' },
       },
     })
+
+    cmp.setup.filetype({ 'html' }, {
+      sources = cmp.config.sources {
+        { name = 'nvim_lsp' },
+        { name = 'luasnip' },
+        { name = 'buffer' },
+        { name = 'path' },
+      },
+    })
   end,
 }

@@ -4,5 +4,5 @@ edit = [
 {run = 'code "$@"', block = true},
 ]
 
-[mgr]
+[manager]
 show_hidden = false
