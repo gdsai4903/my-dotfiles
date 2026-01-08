@@ -8,7 +8,7 @@ $os\
 $username\
 $hostname\
 $conda\
-[ ](fg:color_bg1 bg:color_bg2)\
+[](fg:color_bg1 bg:color_bg2)\
 $directory\
 [ ](fg:color_bg2 bg:color_bg3)\
 $git_branch\
@@ -88,9 +88,8 @@ style = "bg:color_bg1 fg:color_white"
 disabled = false
 
 [username]
-disabled = false
-format = "[$user]($style)"
-show_always = false
+format = "[$user ]($style)"
+show_always = true
 style_root = "bg:color_bg1 fg:color_red"
 style_user = "bg:color_bg1 fg:color_white"
 
@@ -124,7 +123,7 @@ symbol = " "
 [conda]
 truncation_length = 3
 style = "fg:color_bg4 bg:color_bg1"
-format = '[($environment)]($style)'
+format = '[\($environment\)]($style)'
 ignore_base = false
 disabled = false
 
